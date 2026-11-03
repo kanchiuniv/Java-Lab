@@ -1,4 +1,22 @@
-class A extends Thread {
+EXP NO:10(A)
+DATE:15/9/26
+
+AIM:
+To write and execute a Java program to create multiple threads using the Thread class and demonstrate thread execution using yield() and sleep() methods.
+
+ALGORITHM:
+1. Start the program.
+2. Create three thread classes A, B, and C by extending the Thread class.
+3. Define the run() method in each thread class.
+4. In thread A, print numbers from 1 to 5 and use the yield() method.
+5. In thread B, print numbers from 1 to 5 and terminate when j == 3.
+6. In thread C, print numbers from 1 to 5 and use the sleep() method.
+7. In the main method, create objects for threads A, B, and C.
+8. Start all three threads using the start() method.
+9. Display the message indicating the main thread has exited.
+10. Stop the program.class A extends Thread {
+
+JAVA PROGRAM:
     public void run() {
         for (int i = 1; i <= 5; i++) {
             if (i == 1) {
@@ -100,3 +118,25 @@ System.out.println("start thread B"); threadB.start(); System.out.println("start
 System.out.println("end of main thread");
 }
 }
+
+OUTPUT:
+Start thread A
+exit from main thread
+from thread A i=1
+from thread B j=1
+from thread A i=2
+from thread B j=2
+from thread A i=3
+from thread B j=3
+exit from B
+thread C = 1
+from thread A i=4
+from thread A i=5
+exit from A
+thread C = 2
+thread C = 3
+thread C = 4
+thread C = 5
+    
+RESULT:
+Thus, the Java program to create multiple threads and set their priorities using the setPriority() method was executed successfully.
