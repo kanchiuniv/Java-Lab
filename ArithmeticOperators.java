@@ -1,4 +1,18 @@
+EXP.NO:2A
+DATE:04-08-26
+                    ARITHEMATIC OPERATIONS USING SWITCH CASE
+Aim:
+To perform arithmetic operations such as addition, subtraction, multiplication, division, and modulus using Java.
 
+Algorithm:
+1.	Read two numbers from the user.
+2.	Display the arithmetic operation menu.
+3.	Read the user's choice.
+4.	Perform the selected operation using switch.
+5.	Display the result.
+6.	Repeat until the user selects Exit.
+    
+Code:
 import java.util.Scanner;
 
 public class ArithmeticOperators {
@@ -68,3 +82,40 @@ public class ArithmeticOperators {
         }
     }
 }
+Output:
+Enter the two numbers to perform operations
+Enter the first number: 20
+Enter the second number: 5
+
+Choose the operation you want to perform:
+1. ADDITION
+2. SUBTRACTION
+3. MULTIPLICATION
+4. DIVISION
+5. MODULUS
+6. EXIT
+1
+Result: 25
+
+Choose the operation you want to perform:
+1. ADDITION
+2. SUBTRACTION
+3. MULTIPLICATION
+4. DIVISION
+5. MODULUS
+6. EXIT
+4
+Result: 4.0
+
+Choose the operation you want to perform:
+1. ADDITION
+2. SUBTRACTION
+3. MULTIPLICATION
+4. DIVISION
+5. MODULUS
+6. EXIT
+6
+Exiting...
+    
+Result:
+Thus, the program successfully performs the selected arithmetic operations on two numbers.
