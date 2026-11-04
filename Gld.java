@@ -17,25 +17,39 @@ Algorithm:
 10. Stop the program.import java.awt.*;
 
 Code:
-import java.awt.*;
-import javax.swing.*;
-
-public class GridLayoutExample {
-    public static void main(String[] args) {
-        JFrame f = new JFrame("GridLayout Example");
-
-        f.setLayout(new GridLayout(2, 3));
-
-        f.add(new JButton("One"));
-        f.add(new JButton("Two"));
-        f.add(new JButton("Three"));
-        f.add(new JButton("Four"));
-        f.add(new JButton("Five"));
-        f.add(new JButton("Six"));
-
-        f.setSize(400, 200);
-        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        f.setVisible(true);
-    }
+import java.io.*;
+import java.applet.Applet.*;
+import java.applet.*;
+/*<applet code="gld.class" height=300 width=300>
+</applet>*/
+public class gld extends Applet
+{
+public void init()
+{
+setLayout(new GridLayout(5,2));
+Button b1=new Button("A");
+Button b2=new Button("B");
+Button b3=new Button("C");
+Button b4=new Button("D");
+Button b5=new Button("E");
+Button b6=new Button("F");
+Button b7=new Button("G");
+Button b8=new Button("H");
+Button b9=new Button("I");
+Button b10=new Button("J");
+add(b1);
+add(b2);
+add(b3);
+add(b4);
+add(b5);
+add(b6);
+add(b7);
+add(b8);
+add(b9);
+add(b10);
 }
+public Insets getInsets()
+{
+return new Insets(20,20,20,20);
+}}
 Result: Thus, the Java Applet program to create ten buttons using `GridLayout` with 5 rows and 2 columns was executed successfully.
